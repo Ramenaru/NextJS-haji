@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link'
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -23,35 +22,35 @@ export default function Home() {
            <h2 className="font-medium text-xl mt-8 mb-4">Pilih paket anda</h2>   
            </div>          
             </div>
-            <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800 mx-auto">
+            <div className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800 mx-auto">
                 <img src="/petugas.png" className='scale-140 object-cover mt-12 ml-3' alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
                     Petugas Haji</h5>
-                    <p className="mb-2 font-extrabold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 50 Hari</span></p>
-                    <p className="text-gray-400 text-xs mb-2">15 GB akses Internet Arab Saudi Masa berlaku 12 x 24 Jam di Arab Saudi dan negara transit.</p>
+                    <div className="mb-2 font-extrabold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 50 Hari</span></div>
+                    <div className="text-gray-400 text-xs mb-2">15 GB akses Internet Arab Saudi Masa berlaku 12 x 24 Jam di Arab Saudi dan negara transit.</div>
                     <div className="col-8">
-                    <span className='font-bold font-2xl'>Rp. 750.000</span><Link href="/isidata" class="float-right mt-2 px-7 py-1 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
+                    <span className='font-bold font-2xl'>Rp. 750.000</span><Link href="/isidata" class="relative bottom-2 float-right mt-2 px-7 py-1 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
                     </div>
                 </div>
-            </a>
-            <a href="#" className="flex items-center mt-8 mx-auto bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+            </div>
+            <div className="flex items-center mt-8 mx-auto bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <img src="/petugas.png" className='scale-140 object-cover mt-10 ml-3' alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
                     Petugas Haji</h5>
-                    <p className="mb-2 font-extrabold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 80 Hari</span></p>
-                    <p className="text-gray-400 text-xs mb-2">80 GB akses Internet Arab Saudi Masa berlaku 12 x 24 Jam di Arab Saudi dan negara transit.</p>
+                    <div className="mb-2 font-extrabold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 80 Hari</span></div>
+                    <div className="text-gray-400 text-xs mb-2">80 GB akses Internet Arab Saudi Masa berlaku 12 x 24 Jam di Arab Saudi dan negara transit.</div>
                     <div className="justify-between w-full">
-                    <span className='font-bold font-2xl mt-2'>Rp. 850.000</span><Link href="/isidata" class="float-right mt-2 px-7 py-1 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
+                    <span className='font-bold font-2xl mt-2'>Rp. 850.000</span><Link href="/isidata" class="relative bottom-2 float-right mt-2 px-7 py-1 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
                     </div>
                 </div>
-            </a>
+            </div>
           </div>
           <footer>
           <div class="text-center p-6 bg-[#404040]">
             <span className='text-white'>© 2021 Copyright: </span>
-            <a class="text-white" href="https://tailwind-elements.com/">LontarLab</a>
+            <div class="text-white" href="https://tailwind-elements.com/">LontarLab</div>
           </div>
           </footer>
         </body>

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -19,18 +18,18 @@ export default function Home() {
            <div className="flex items-center flex-row max-w-xl mx-auto">
            <h2 className="font-bold text-l mt-12">Paket yang dipilih :</h2>   
            </div> 
-           <a href="#" className="mx-auto flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+           <div href="#" className="mx-auto flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <img src="/petugas.png" className='ml- scale-130 object-cover ml-3' alt="" />
                 <div className="flex flex-col justify-between p-1 leading-normal">
                     <h5 className="mb-1 text-l font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
                     Petugas Haji</h5>
                     <p className="font-bold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 50 Hari</span></p>
                 </div>
-            </a>
+            </div>
             <div className="flex items-center flex-row max-w-xl mx-auto">
            <h2 className="font-bold text-l mt-12 mb-2">Konfirmasi data anda!</h2>   
            </div>                
-            <a href="#" className="mx-auto flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-2 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+            <div href="#" className="mx-auto flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-2 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <div class="mb-6 mt-3 flex flex-wrap">
                     <p className='mt-2 flex px-5 w-full justify-between'>Nomor anda: <span className='font-bold text-[#CB3A31]'>085156214511</span></p>
                     <p className='mt-2 flex px-5 w-full justify-between'>Nama: <span className='font-bold text-[#CB3A31] text-right'>Muhammad Ramenaru</span></p>
@@ -46,21 +45,21 @@ export default function Home() {
                   </label>
               </div> 
               </div>
-            </a>
+            </div>
             <div className="fixed top-96 left-0 right-0 rounded-full drop-shadow-lg flex justify-center items-center text-white duration-300">
-            <a href="#" className="flex items-left mx-auto bg-white border border-gray-200 rounded-lg shadow-lg mt-8 max-w-xl dark:border-gray-700 dark:bg-gray-800">
+            <div href="#" className="flex items-left mx-auto bg-white border border-gray-200 rounded-lg shadow-lg mt-8 max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <div className="justify-between px-2 leading-normal">
                     <h5 className="mb-1 text-l ml-2 mt-2 font-medium tracking-tight text-gray-900 dark:text-white">Total Harga</h5>
                     <h5 className="mb-1 text-2xl ml-2 font-bold tracking-tight text-gray-900 dark:text-white justify-between">Rp. 750.000<Link href="/bayar" className='relative bottom-3 float-right text-medium items-center ml-12 mr-2 px-6 py-3 text-sm font-bold text-center text-white bg-[#CB3A31] rounded-lg'>Lanjutkan</Link></h5>
                 </div>
-            </a>
+            </div>
             </div>
           </div>
           
           <footer>
           <div class="text-center p-6 mt-10 bg-[#404040]">
             <span className='text-white'>© 2021 Copyright: </span>
-            <a class="text-white" href="https://tailwind-elements.com/">LontarLab</a>
+            <div class="text-white" href="https://tailwind-elements.com/">LontarLab</div>
           </div>
           </footer>
         </body>

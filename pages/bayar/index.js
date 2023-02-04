@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
         <footer>
           <div class="text-center p-6 mt-10 bg-[#404040]">
             <span className='text-white'>© 2021 Copyright: </span>
-            <a class="text-white" href="https://tailwind-elements.com/">LontarLab</a>
+            <div class="text-white" href="https://tailwind-elements.com/">LontarLab</div>
           </div>
           </footer>   
         </body>
