@@ -17,24 +17,14 @@ export default function Home() {
         <body>
         <div className="px-8 py-12">
         <img src="/bayar.png" className='mx-auto' alt="" />
-        <img src="/info.png" alt="tenangnya text" className="scale-140 ml-3 mt-12" />
-        <img src="/cheat.png" alt="tenangnya text" className="scale-140 mt-5" />
-        <p className="text-black text-l ml-2 mt-3">Silahkan Selesaikan Pembayaran</p>
-        <p className="text-black text-l ml-2">Anda Dalam:    
-        <div className="font-bold">
-                <span id='hours' className='text-[#CB3A31]'> 03</span>
-                <span className='text-[#CB3A31]'> : </span>
-                <span id='minutes' className='text-[#CB3A31]'>00</span>
-                <span className='text-[#CB3A31]'> : </span>
-                <span id='second' className='text-[#CB3A31]'> 00</span>
-                <span id='session' className='text-[#CB3A31]'> AM</span>
+        <img src="/info.png" alt="tenangnya text" className="scale-140 mx-auto mt-12" />
+        <img src="/cheat.png" alt="tenangnya text" className="scale-140 mx-auto mt-5" />
+        <img src="/time.png" alt="tenangnya text" className="mx-auto scale-140 mt-5" />
+        <img src="/qris.png" alt="tenangnya text" className="mx-auto scale-140 mt-5" />
+        <div className="flex">
+        <Link href="/" class="mt-2 inline-flex  mx-auto items-center px-6 py-4 text-sm font-bold object-center text-center text-white bg-[#CB3A31] rounded-lg">Simpan Kode QR</Link>
         </div>
-            </p>
-        <img src="/qris.png" alt="tenangnya text" className="scale-140 mt-5" />
-        <div className="mx-auto px-20">
-        <Link href="/" class="mt-2 inline-flex  items-center px-6 py-4 text-sm font-bold object-center text-center text-white bg-[#CB3A31] rounded-lg">Simpan Kode QR</Link>
-        </div>
-        <img src="/alert.png" alt="tenangnya text" className="scale-140 mt-5" />
+        <img src="/alert.png" alt="tenangnya text" className="mx-auto scale-140 mt-5" />
         </div>
         <footer>
           <div class="text-center p-6 mt-10 bg-[#404040]">

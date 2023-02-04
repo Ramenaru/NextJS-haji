@@ -14,10 +14,12 @@ export default function Home() {
       </Head>
       <main>
         <body>
-        <div className="px-8 py-12">
+        <div className="px-6 py-12">
            <img src="/isidata.png" className='mx-auto' alt="" />
+           <div className="flex items-center flex-row max-w-xl mx-auto">
            <h2 className="font-bold text-l mt-12">Paket yang dipilih :</h2>   
-           <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+           </div>
+           <a href="#" className="flex items-center mx-auto bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <img src="/petugas.png" className='ml- scale-130 object-cover ml-3' alt="" />
                 <div className="flex flex-col justify-between p-1 leading-normal">
                     <h5 className="mb-1 text-l font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
@@ -25,22 +27,25 @@ export default function Home() {
                     <p className="font-bold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 50 Hari</span></p>
                 </div>
             </a>
-            <h2 className="font-bold text-l mt-6">Isi data anda!</h2>   
-                <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
-                <div class="mb-6">
-                <label class="block text-gray-700 font-medium mb-2 mt-3 ml-5" for="username">
+            <div className="flex items-center flex-row max-w-xl mx-auto">
+           <h2 className="font-bold text-l mt-12">Isi data anda!</h2>   
+           </div>
+                <a href="#" className="mx-auto flex flex-wrap items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+                <div class="mb-6 w-full px-6">
+                  <form className='px-2 mb-4'>
+                  <label class="block text-gray-700 font-medium mb-2 mt-3" for="username">
                   Nomor yang diisi <span className='text-[#CB3A31]'>*</span>
                 </label>
-                <input  placeholder="+62"  class="shadow appearance-none border rounded py-1 ml-5 px-5" id="username" type="text"/>
-                <label class="block text-gray-700 font-medium mb-2 mt-3 ml-5" for="username">
+                <input  placeholder="+62"  className="block w-full shadow appearance-none border rounded py-1 px-2" id="username" type="text"/>
+                <label class="block text-gray-700 font-medium mb-2 mt-3" for="username">
                   Nama <span className='text-[#CB3A31]'>*</span>
                 </label>
-                <input  placeholder="Masukan nama anda"  class="shadow appearance-none border rounded py-1 ml-5 px-5" id="username" type="text"/>
-                <label class="block text-gray-700 font-medium mb-2 mt-3 ml-5" for="username">
+                <input  placeholder="Masukan nama anda"  class="block w-full shadow appearance-none border rounded py-1 px-2" id="username" type="text"/>
+                <label class="block text-gray-700 font-medium mb-2 mt-3" for="username">
                   Upload dokumen pendukung <span className='text-[#CB3A31]'>*</span>
                 </label>
-                <div div class="flex items-center justify-center w-full ml-3 px-2 mt-4">
-                  <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-44 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                <div div class="flex items-center justify-center w-full px-2 mt-4">
+                  <label for="dropzone-file" class=" flex flex-col items-center justify-center  w-full h-44 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                       <div class="flex flex-col items-center justify-center pt-5 pb-6">
                           <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
                           <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">Click to upload</p>     
@@ -48,28 +53,32 @@ export default function Home() {
                       <input id="dropzone-file" type="file" class="hidden" />
                   </label>
               </div> 
-              
+                  </form>
               </div>
             </a>
-            <a href="#" className="flex items-center mb-2 bg-white border border-gray-200 rounded-lg shadow-lg mt-3 dark:border-gray-700 dark:bg-gray-800">
-                <div className="flex flex-col justify-between p-1 leading-normal">
-                    <h5 className="mb-1 text-l mt-2 ml-3 font-medium tracking-tight text-gray-900 dark:text-white">Total Harga</h5>
-                    <h5 className="mb-1 text-2xl mt-2 ml-3 font-bold tracking-tight text-gray-900 dark:text-white">Rp. 750.000<Link href="/konfirmasi" className='text-medium ml-12 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg mb-2'>Lanjutkan</Link></h5>
-                </div>
-            </a>
-            <h2 className="font-bold text-l text-center text-[#CB3A31]">Harap mengisi form dibawah ini</h2>  
-            <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
-                <div class="mb-6">
-                <label class="block text-gray-700 font-medium mb-2 mt-3 ml-5" for="username">
+            <div className="flex">
+           <h2 className="font-bold text-l mx-auto mt-6 mb-2 text-[#CB3A31]">Harap mengisi form dibawah ini !</h2>   
+           </div>
+            <a href="#" className="flex flex-wrap  items-center mx-auto bg-white border border-gray-200 rounded-lg shadow-lg mt-3 flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+                <div class="mb-6 w-full px-6">
+                <label class="block text-gray-700 font-medium mb-2 mt-3" for="username">
                   Nomor Whatsapp <span className='text-[#CB3A31]'></span>
                 </label>
-                <input  placeholder="+62"  class="shadow appearance-none border rounded py-1 ml-5 px-5" id="username" type="text"/>
-                <label class="block text-gray-700 font-medium mb-2 mt-3 ml-5" for="username">
+                <input  placeholder="+62"  class="block w-full shadow appearance-none border rounded py-1 px-2" id="username" type="text"/>
+                <label class="block text-gray-700 font-medium mb-2 mt-3" for="username">
                   Email <span className='text-[#CB3A31]'></span>
                 </label>
-                <input  placeholder="Masukan email anda"  class="shadow appearance-none border rounded py-1 ml-5 px-5" id="username" type="text"/>
+                <input  placeholder="Masukan email anda"  class="block w-full shadow appearance-none border rounded py-1 px-2" id="username" type="text"/>
               </div>
-            </a> 
+            </a>
+            <div className="fixed top-96 left-0 right-0 rounded-full drop-shadow-lg flex justify-center items-center text-white duration-300">
+            <a href="#" className="flex items-left mx-auto bg-white border border-gray-200 rounded-lg shadow-lg mt-8 max-w-xl dark:border-gray-700 dark:bg-gray-800">
+                <div className="justify-between px-2 leading-normal">
+                    <h5 className="mb-1 text-l ml-2 mt-2 font-medium tracking-tight text-gray-900 dark:text-white">Total Harga</h5>
+                    <h5 className="mb-1 text-2xl ml-2 font-bold tracking-tight text-gray-900 dark:text-white justify-between">Rp. 750.000<Link href="/konfirmasi" className='relative bottom-3 float-right text-medium items-center ml-12 mr-2 px-6 py-3 text-sm font-bold text-center text-white bg-[#CB3A31] rounded-lg'>Lanjutkan</Link></h5>
+                </div>
+            </a>
+            </div>
           </div>
           
           <footer>
