@@ -15,10 +15,12 @@ export default function Home() {
       <main>
         <body>
           <div className="px-8 py-12">
-            <img src="/tenangnya.png" alt="tenangnya text" className="scale-140" />
-            <img src="/mekkah.png" alt="" className="mt-6" />
+            <img src="/tenangnya.png" alt="tenangnya text" className="scale-140 mx-auto" />
+            <img src="/mekkah.png" alt="" className="mt-6 mx-auto" />
+            <div className="mx-auto">
             <h2 className="font-bold text-xl mt-10 mb-4">Pilih paket anda</h2>            
-            <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+            </div>
+            <a href="#" className="flex items-center bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800 mx-auto">
                 <img src="/petugas.png" className='ml- scale-150 object-cover mt-11 ml-3' alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
@@ -30,15 +32,16 @@ export default function Home() {
                     </div>
                 </div>
             </a>
-            <a href="#" className="flex items-center mt-8 bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
+            <a href="#" className="flex items-center mt-8 mx-auto bg-white border border-gray-200 rounded-lg shadow-lg flex-row max-w-xl dark:border-gray-700 dark:bg-gray-800">
                 <img src="/petugas.png" className='ml- scale-150 object-cover mt-11 ml-3' alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Internet RoaMax
                     Petugas Haji</h5>
                     <p className="mb-2 font-bold text-3xl text-[#CB3A31]">15 GB | <span className='font-medium text-xl text-[#CB3A31]'> 80 Hari</span></p>
                     <p className="text-gray-400 text-xs">80 GB akses Internet Arab Saudi Masa berlaku 12 x 24 Jam di Arab Saudi dan negara transit.</p>
-                    <div className="col-8">
-                    <span className='font-bold font-2xl'>Rp. 850.000</span><Link href="/isidata" class="ml-10 mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
+                    <br />
+                    <div className="justify-between w-full">
+                    <span className='font-bold font-2xl mt-2'>Rp. 850.000</span><Link href="/isidata" class="float-right mt-2 px-7 py-1 text-sm font-medium text-center text-white bg-[#CB3A31] rounded-lg">Beli</Link>
                     </div>
                 </div>
             </a>
