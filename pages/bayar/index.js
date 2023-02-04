@@ -17,7 +17,7 @@ export default function Home() {
         <div className="px-8 py-12">
         <img src="/bayar.png" className='mx-auto' alt="" />
         <img src="/info.png" alt="tenangnya text" className="scale-140 mx-auto mt-12" />
-        <img src="/cheat.png" alt="tenangnya text" className="scale-140 mx-auto mt-5" />
+        <img src="/cheat.png" alt="info text" className="scale-140 mx-auto mt-5" />
         <img src="/time.png" alt="tenangnya text" className="mx-auto scale-140 mt-5" />
         <img src="/qris.png" alt="tenangnya text" className="mx-auto scale-140 mt-5" />
         <div className="flex">
